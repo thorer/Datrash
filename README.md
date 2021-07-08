@@ -62,3 +62,24 @@ Pour cela on peut exécuter le fichier xml_to_csv.py :
 python xml_to_csv.py
 ```
 
+Nous aurons donc deux nouveaux fichier : test_labels.csv et train_labels.csv.
+Nous pouvons ensuite passer à la creéation de nos Tfrecords avec le fichier generate_tfrecords.py.
+
+```bash
+python generate_tfrecords.py
+```
+> Il faudra faire attention à bien modfifier une partie du logiciel avec vos propres labels : 
+
+```bash
+def class_text_to_int(row_label):
+    if row_label == 'trash_can':
+        return 1
+    elif row_label == 'trash_cup':
+        return 2
+    elif row_label == 'trash_bag':
+        return 3
+    elif row_label == 'trash_bottle':
+        return 4
+    else:
+        return None
+```
