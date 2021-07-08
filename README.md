@@ -88,4 +88,27 @@ python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=image
 ```
 > Cela va générer deux fichiers : train.record et test.record
 
+Pour finir avec cette étape, il faut créer un Label_map pour pouvoir entraîner notre modèle choisi.
+
+> Ne pas oublier de garder les mêmes noms de labels et id que dans generate_tfrecords.py 
+
+```bash
+item {
+    id: 1
+    name: 'trash_can'
+}
+item {
+    id: 2
+    name: 'trash_cup'
+}
+item {
+    id: 3
+    name: 'trash_bag'
+}
+item {
+    id: 4
+    name: 'trash_bottle'
+}
+```
+
 
