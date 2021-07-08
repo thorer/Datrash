@@ -86,3 +86,6 @@ Pour générer les TFrecords on peut utiliser cette commande :
 python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
 python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
 ```
+> Cela va générer deux fichiers : train.record et test.record
+
+
