@@ -22,8 +22,28 @@ Il faudra ensuite activé son environnement de travail et installer toutes les b
 > Activer l'environnement : 
 
 ```bash
-.\"nom de l'environnement"\Scripts\activate # Windows 
+.\nom de l'environnement\Scripts\activate # Windows 
 ```
+> Installer les dépendances : 
+> Installation de protocol buffer (manipulation possible sur Windows) avec la dernière version sur : 
+ 
+ https://github.com/protocolbuffers/protobuf/releases
+ 
+> Puis compiler protos dans votre dossier models/research : 
+```bash
+protoc object_detection/protos/*.proto --python_out=.
+```
+> Il faut ensuite copier le setup.py dans le dossier object_detection/packages/tf2/setup.py
+> dans votre dossier courant research : 
+```bash
+python -m pip install .
+```
+> Pour vérifier si tout a bien été installer il faut exécuter la lige suivante :
+```bash
+python object_detection/builders/model_builder_tf2_test.py
+```
+
+# Deuxième pas 
 
 
 
