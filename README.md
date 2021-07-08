@@ -63,11 +63,8 @@ python xml_to_csv.py
 ```
 
 Nous aurons donc deux nouveaux fichier : test_labels.csv et train_labels.csv.
-Nous pouvons ensuite passer à la creéation de nos Tfrecords avec le fichier generate_tfrecords.py.
+Nous pouvons ensuite passer à la création de nos Tfrecords avec le fichier generate_tfrecords.py.
 
-```bash
-python generate_tfrecords.py
-```
 > Il faudra faire attention à bien modfifier une partie du logiciel avec vos propres labels : 
 
 ```bash
@@ -82,4 +79,10 @@ def class_text_to_int(row_label):
         return 4
     else:
         return None
+```
+Pour générer les TFrecords on peut utiliser cette commande :
+
+```bash
+python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
+python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
 ```
