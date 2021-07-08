@@ -9,3 +9,7 @@ Pour cela, nous avons utilisé une intelligence artificielle basé sur une déte
 > Pour le projet nous utiliserons Python version 3.8 localement et avec anaconda.
 > Pour débuter ce projet, le premier élément est de créer un environnement virtuel de travail aec python : 
 
+```bash
+python -m venv " nom de l'environnement "
+```
+
