@@ -2,4 +2,8 @@
 Object_detection
 
 # Présentation
+Dans le cardre d'un Master Camp, nous avons souhaité développer un outil de détection de déchets à l'aide d'une intelligence artificielle.
+Pour cela, nous avons utilisé une intelligence artificielle basé sur une détection en "boxes" à l'aide de Tensorflow V2.
+
+# Premiers pas 
 
