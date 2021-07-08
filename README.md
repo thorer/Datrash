@@ -50,3 +50,15 @@ Pour cela nous devrons utiliser LabelImg.py pour labiliser les données.
 LabelImg permet de faire des boundings boxes autour des objets désirées.
 
 > LabelImg GitHub
+
+Il faudra ensuite placer environ 80 % des images avec leurs fichiers .xml dans un dossier "train" et 20 % dans un dossier "test".
+
+# Troisième étape
+
+Avec nos images labellisées nous allons créer des Tfrecords pour utiliser notre model. Pohur cela nous ne pouvons passer par des fichiers XML mais des fichiers CSV.
+Pour cela on peut exécuter le fichier xml_to_csv.py : 
+
+```bash
+python xml_to_csv.py
+```
+
