@@ -17,6 +17,14 @@ Dans un deuxième temps nous devrons cloner Tensorflow pour l'utiliser dans son 
 ```bash
 git clone https://github.com/tensorflow/models.git
 ```
+Il faudra ensuite activé son environnement de travail et installer toutes les bibliotèques.
+
+> Activer l'environnement : 
+
+```bash
+.\"nom de l'environnement"\Scripts\activate # Windows 
+```
+
 
 
 
