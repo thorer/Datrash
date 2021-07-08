@@ -12,4 +12,11 @@ Pour cela, nous avons utilisé une intelligence artificielle basé sur une déte
 ```bash
 python -m venv " nom de l'environnement "
 ```
+Dans un deuxième temps nosu devrons cloner Tensorflow pour l'utiliser dans son dossier de projet:
+
+```bash
+git clone https://github.com/tensorflow/models.git
+```
+
+
 
