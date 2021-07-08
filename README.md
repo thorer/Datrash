@@ -22,7 +22,7 @@ Il faudra ensuite activé son environnement de travail et installer toutes les b
 > Activer l'environnement : 
 
 ```bash
-.\nom de l'environnement\Scripts\activate # Windows 
+.\nom de l_environnement\Scripts\activate # Windows 
 ```
 > Installer les dépendances : 
 > Installation de protocol buffer (manipulation possible sur Windows) avec la dernière version sur : 
@@ -45,6 +45,8 @@ python object_detection/builders/model_builder_tf2_test.py
 
 # Deuxième pas 
 
+Maintenant que tout est installé correctement, il faut ensuite préparer son dataset. 
+Pour cela nous devrons utiliser LabelImg.py pour labiliser les données.
+LabelImg permet de faire des boundings boxes autour des objets désirées.
 
-
-
+> LabelImg GitHub
